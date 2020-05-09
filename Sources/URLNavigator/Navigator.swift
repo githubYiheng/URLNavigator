@@ -1,10 +1,6 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-#if !COCOAPODS
-import URLMatcher
-#endif
-
 public typealias URLPattern = String
 public typealias ViewControllerFactory = (_ url: URLConvertible, _ values: [String: Any], _ context: Any?) -> UIViewController?
 public typealias URLOpenHandlerFactory = (_ url: URLConvertible, _ values: [String: Any], _ context: Any?) -> Bool

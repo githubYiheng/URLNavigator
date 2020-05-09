@@ -1,10 +1,6 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-#if !COCOAPODS
-import URLMatcher
-#endif
-
 public protocol NavigatorProtocol: class {
   var delegate: NavigatorDelegate? { get set }
 
